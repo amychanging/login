@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="某网站">
+    <meta name="description" content="测试你的能力">
+    <title>登录-某网站 </title>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+  </head>
+  <body class="accout-page">
+    <div class="container mod-body ">
+      <div class="mod-main">   
+        <div class="logo"></div>
+        <div id="login-form" class="form form-content">
+          <div class="input-con top-con"> 
+            <input type="text" name="username" id="username" placeholder="请输入手机号/邮箱" class="input top">
+          </div>
+          <div class="input-con bottom-con">
+            <input type="text" name="password" id="password" placeholder="密码（6-16位字母或数字组合）" class="input bottom"><a href="javascript:;" class="password-control iconfont checked">&#xe604;</a>
+          </div>
+          <div class="user-arguments">
+            <label class="radio"> 
+              <input type="checkbox" value="1" checked id="agreement" name="agreement"><span>同意</span>
+            </label><a href="#">《某网站用户协议》</a>
+          </div>
+          <div class="button-con"><a href="javascript:;" class="button submit-btn">登录</a>
+          </div>
+          <div class="log-qa-con"><a href="#" class="fl">忘记密码？</a><a href="#" class="fr">还没有某网站账号？去注册<span class="iconfont">&#xe602;</span></a></div>
+        </div>
+        <div class="sperate-line">
+          <div class="dot-line"> </div>
+          <div class="sperate-des">第三方平台  快速登录</div>
+        </div>
+        <div class="mod-login-others"><a href="javascript:;" class="weibo"></a><a href="javascript:;" class="weixin"></a><a href="javascript:;" class="qq"></a><a href="javascript:;" class="renren"></a><a href="javascript:;" class="douban"></a><a href="javascript:;" class="kaikeba"></a></div>
+      </div>
+      <div class="mod-foot">
+        <div class="links"><a href="/">首页</a><a href="/">去学习</a><a href="/">我要吐槽</a></div>
+        <div class="copyright">某网站 @版权所有</div>
+      </div>
+      <script id="seajsnode" src="../js/lib/sea.js"></script>
+      <script>
+        seajs.config({
+            base:'../',
+            map:[[/^(.*\.(?:css|js))(?:.*)$/i, '$1?20150129']]
+        });
+        seajs.use('js/base');
+        
+      </script>
+      <script>seajs.use('js/login') </script>
+    </div>
+  </body>
+</html>

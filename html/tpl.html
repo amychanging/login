@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="某网站">
+    <meta name="description" content="测试你的能力">
+    <title>-某网站 </title>
+    <link href="../css/base.css" rel="stylesheet">
+  </head>
+  <body class="undefined-page">
+    <div class="container mod-body undefined">
+      <div class="mod-main">   
+      </div>
+      <div class="mod-foot">
+        <div class="links"><a href="/">首页</a><a href="/">去学习</a><a href="/">我要吐槽</a></div>
+        <div class="copyright">某网站@版权所有</div>
+      </div>
+      <script id="seajsnode" src="../js/lib/sea.js"></script>
+      <script>
+        seajs.config({
+            base:'../',
+            map:[[/^(.*\.(?:css|js))(?:.*)$/i, '$1?20150129']]
+        });
+        seajs.use('js/base');
+        
+      </script>
+    </div>
+  </body>
+</html>
